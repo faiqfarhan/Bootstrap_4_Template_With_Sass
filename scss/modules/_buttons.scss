@@ -1,0 +1,20 @@
+/*Buttons*/
+
+.btn-primary{
+	@include add-background($primary-color);
+	@include add-border(2px,#ffffff,'all');
+}
+.btn-primary:hover{
+	background:lighten($primary-color,10%);
+	@include add-border(2px,#ffffff,'all');
+}
+
+.btn-blog{
+	@extend .btn-primary;
+	margin-top:-10px;
+	@include add-border(2px,#f3f3f3,'all');
+}
+.btn-blog:hover{
+	@extend .btn-primary:hover;
+	@include add-border(2px,#f3f3f3,'all');
+}

@@ -1,0 +1,26 @@
+/* Carousel */
+
+.carousel{
+	margin-bottom:20px;
+}
+
+.carousel img{
+	padding: 3px;
+	@include add-border(2px,#cccccc, all);
+} 
+
+/* Tabs */
+
+.tab-pane{
+	padding: 0 10px;
+	@include border-radius(5px);
+	
+}
+
+.tab-primary .nav-tabs .nav-link.active, .tab-primary .nav-tabs .nav-item.show .nav-link{
+	@include add-background($primary-color);
+}
+
+.tab-light .nav-tabs .nav-link.active, .tab-light .nav-tabs .nav-item.show .nav-link{
+	@include add-background($light-color);
+}
